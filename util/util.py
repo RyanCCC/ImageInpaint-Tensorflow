@@ -23,6 +23,7 @@ def generate_mask_rect(im_shapes, mask_shapes, rand=True):
         of0 = (im_shapes[0]-mask_shapes[0])//2
         of1 = (im_shapes[1]-mask_shapes[1])//2
     mask[of0:of0+mask_shapes[0], of1:of1+mask_shapes[1]] = 1
+    # 将mask扩展到三通道
     mask = np.expand_dims(mask, axis=2)
     return mask
 
