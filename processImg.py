@@ -28,7 +28,7 @@ def img_scale(img, target_size):
     return img_new
 
 if __name__ == '__main__':
-    img_path = './images/test_1.png'
+    img_path = './images/test_2.png'
     target_size =256, 256
     image = cv2.imread(img_path)
     image_resize = img_resize(image, target_size)

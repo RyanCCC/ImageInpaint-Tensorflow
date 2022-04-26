@@ -10,9 +10,9 @@ class TestConfig:
     def initialize(self):
         self.parser.add_argument('--dataset', type=str, default='facade',
                                  help='The dataset of the experiment.')
-        self.parser.add_argument('--data_file', type=str, default='./imgs/facade/', help='the file storing testing file paths')
+        self.parser.add_argument('--data_file', type=str, default='./images/', help='the file storing testing file paths')
         self.parser.add_argument('--test_dir', type=str, default='./test_results', help='models are saved here')
-        self.parser.add_argument('--load_model_dir', type=str, default='../checkpoints/paris-streetview_256x256_rect', help='pretrained models are given here')
+        self.parser.add_argument('--load_model_dir', type=str, default='./checkpoints/paris-streetview_256x256_rect', help='pretrained models are given here')
         self.parser.add_argument('--model_prefix', type=str, default='snap')
         self.parser.add_argument('--seed', type=int, default=1, help='random seed')
 

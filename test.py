@@ -4,7 +4,7 @@ import os
 import subprocess
 import glob
 import tensorflow as tf
-from config import TestOptions
+from config import TestConfig
 from util.util import generate_mask_rect, generate_mask_stroke
 from net.network import GMCNNModel
 
@@ -13,7 +13,7 @@ from net.network import GMCNNModel
 #         ))
 
 
-config = TestOptions().parse()
+config = TestConfig().parse()
 
 if os.path.isfile(config.dataset_path):
     pathfile = open(config.dataset_path, 'rt').read().splitlines()
